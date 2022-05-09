@@ -14,8 +14,8 @@ $(document).ready(function () {
         let data = await response.json();
         console.log(data);
 
-        document.querySelector('h1').innerHTML = data.title;
-        document.querySelector('#texto').innerHTML = data.explanation;
+        document.querySelector('#tituloImg').innerHTML = data.title;
+        document.querySelector('#explainImg').innerHTML = data.explanation;
 
         if (data.media_type == "image") {
             document.querySelector('#imgNasa').innerHTML = `<br><img width="700px" height="500px" src="${data.url}">`;
