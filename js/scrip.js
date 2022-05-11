@@ -7,11 +7,11 @@ $(document).ready(function () {
     });
 
     async function sendRequest() {
-        let apiKey = "4BRmrLBBB1Cwrz53RdZAdK0Nxob5FFmUpZ2RflnM";
-        let inData = $("#inData").val();
-        let response = await fetch(`https://api.nasa.gov/planetary/apod?api_key=${apiKey}&date=${inData}`);
+        const apiKey = "4BRmrLBBB1Cwrz53RdZAdK0Nxob5FFmUpZ2RflnM";
+        const inData = $("#inData").val();
+        const response = await fetch(`https://api.nasa.gov/planetary/apod?api_key=${apiKey}&date=${inData}`);
         console.log(response);
-        let data = await response.json();
+        const data = await response.json();
         console.log(data);
 
         document.querySelector('#tituloImg').innerHTML = data.title;

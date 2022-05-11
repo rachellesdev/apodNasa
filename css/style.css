@@ -1,0 +1,13 @@
+body{
+    display: flex;
+    align-items:center;
+    flex-direction: column;
+    background-image: url(./img/fundo-apod.png) ;
+}
+
+.apod{
+    
+    align-items:center;
+    flex-direction: column;
+    text-align: center;
+}
