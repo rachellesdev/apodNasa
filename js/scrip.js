@@ -22,9 +22,9 @@ $(document).ready(function () {
 
         // verificando se o tipo de midia encontrado é video ou imagem para saber se deve-se utilizar a tag img ou iframe
         if (data.media_type == "image") {
-            document.querySelector('#imgNasa').innerHTML = `<br><img width="700px" height="500px" src="${data.url}">`;
+            document.querySelector('#imgNasa').innerHTML = `<br><img width="700px" height="450px" src="${data.url}">`;
         } else {
-            document.querySelector('#imgNasa').innerHTML = `<br><iframe width="700px" height="500px" src="${data.url}">`;
+            document.querySelector('#imgNasa').innerHTML = `<br><iframe width="700px" height="450px" src="${data.url}">`;
         }
     }
 });
