@@ -5,6 +5,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Radio+Canada&display=swap" rel="stylesheet">
+
     <link rel="stylesheet" href="./css/style.css">
     <title>APOD NASA</title>
 </head>
@@ -14,14 +18,15 @@
         <h1>Astronomy Picture of the Day</h1>
         <div id="txt">
             <p>A new picture of our universe every single day since july 20, 1995!</p>
-            <p>Choose a date and see the photo taken by NASA on the chosen day and an explanatory excerpt developed by
+            <p>Choose a date and see the photo taken by NASA on the chosen day and an <br> explanatory excerpt developed
+                by
                 an astronomer.</p>
         </div>
         <br>
         <form>
             <section class="secData">
                 <input type="date" name="inData" id="inData" min="1995-06-20">
-                <button class="btn" id="btn">Resultado</button>
+                <br><br><button class="btn" id="btn">Resultado</button>
             </section>
         </form>
         <br>
@@ -29,6 +34,15 @@
         <div id="explainImg"></div><br>
         <div id="imgNasa"></div>
     </div>
+    <footer>
+        <p>Desenvolvido por Rachelle Santolin &copy; 2022 <br><br>
+            <a href="https://www.linkedin.com/in/rachelle-santolin/"><img src="./css/img/linkedin-icon.svg"
+                width="30" height="30"></a>
+            <a href="https://github.com/rachellesdev"><img src="./css/img/github-icon.svg"
+                width="30" height="30"></a>
+        </p>
+    </footer>
+
     <script src="./js/jquery-3.6.0.min.js"></script>
     <script src="./js/scrip.js"></script>
 </body>
